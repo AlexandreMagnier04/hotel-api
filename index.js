@@ -1,12 +1,12 @@
 import express from 'express';
-import HelloRoutes from './routes/hello.routes.js';
+import AdminRoutes from './routes/admin.routes.js';
 
 const app = new express();
 const port = 3000;
 
 app.use(express.json());
 
-const helloRouter = new HelloRoutes().router;
-app.use("/hello", helloRouter);
+const adminRouter = new AdminRoutes().router;
+app.use("/admin/clients", adminRouter);
 
 app.listen(port, () => { console.log(`Server ON, listening on port ${port}`) });
