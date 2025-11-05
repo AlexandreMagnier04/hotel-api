@@ -1,0 +1,16 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "clientName": "John Doe",
+      "clientEmail": "johndoe@example.com",
+      "roomId": 6,
+      "roomNumber": 106,
+      "roomName": "Double Room",
+      "roomDescription": "A comfortable room with two double beds and a private bathroom.",
+      "roomPrice": 150,
+      "roomCapacity": 4
+    }
+  ]
+}

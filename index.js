@@ -7,6 +7,9 @@ const port = 3000;
 app.use(express.json());
 
 const adminRouter = new AdminRoutes().router;
-app.use("/admin/clients", adminRouter);
+const userRouter = new UserRoutes().router;
+app.use("/users", userRouter);
+app.use("/admin", adminRouter);
+
 
 app.listen(port, () => { console.log(`Server ON, listening on port ${port}`) });
